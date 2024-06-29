@@ -1,0 +1,36 @@
+/* Estilos para el contenedor del LanguageSelector */
+.language-selector-cont {
+    z-index: 800;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    top:0px;
+}
+/* Estilos para el botón */
+.language-button1{
+    font-size: 12px;
+    color: #fff;
+    background-color:red;
+    border: none;
+    /*border-radius: 4px;*/
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+}
+
+.language-option{
+    background-color: #000000;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    color: white; /* Asegura que el texto sea visible sobre el fondo rojo rgba(0, 0, 0, 0.5);*/
+    border: none;
+}
+
+.language-selector{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    color: grey; /* Asegura que el texto sea visible sobre el fondo rojo */
+    border: none;
+}

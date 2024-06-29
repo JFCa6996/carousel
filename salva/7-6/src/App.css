@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000000;
+}
+
+html {
+    font-size: 12px; /* Tamaño de fuente base */
+}
+
+p {
+    /*display: flex;
+    align-items: center; /* Centra verticalmente */
+    white-space: nowrap; /* Evita que el texto se ajuste automáticamente */
+    text-align: justify;
+    color: white;
+    font-size: 1rem; /* Tamaño de fuente para todos los elementos <p> */
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    /*font-family: 'Comic Sans MS', cursive;*/
+    /*justify-content: center; /* Centra horizontalmente */
+
+    /*width: fit-content;
+    /*white-space: pre-wrap; /* Mantendrá los espacios en blanco y permitirá el ajuste de línea */
+    /*word-wrap: break-word; /* Romperá las palabras largas para evitar que desborden el contenedor */
+
+    /*width: 100%;  /* O puedes usar overflow-wrap: break-word; si es más compatible con tu caso */
+    /*margin-left: 20%; /* Espacio entre la imagen y el texto */
+    /*margin-right: 20%; /* Espacio entre la imagen y el texto */
+    /*overflow: hidden; /* Oculta cualquier contenido que desborde del ancho especificado */
+
+    /*font-family: 'Lato', serif;*/
+
+    /*font-family:'Agency FB', serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-family: Arial, sans-serif; */
+    /*font-family: 'Playfair Display', serif;*/
+    /*font-family: 'Montserrat', serif;*/
+    /*font-family: 'Cormorant+Garamond', serif;*/
+    /*font-family: 'Pacifico', serif;*/
+    /*font-family:Montserrat-Lato-Cormorant+Garamond-Merriweather-Pacifico;*/
+}
+
+
+.main_artist_container {
+    display: flex; /* Flexbox para centrar el contenido horizontal y verticalmente */
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+    background: rgba(253, 2, 115, 0.46);
+    max-width: 100vw; /**********OJOOOOOOO*********/
+    height: auto;
+    gap: 0; /* Elimina espacio entre los elementos flexibles */
+    margin: 0;
+    padding: 0;
+}
+
+.seccion_map_1_v_cont { /*Mapeo principal del arreglo, artistas*/
+    /*scroll vertical definido por defecto*/
+    overflow-x: hidden; /*para que esta seccion no se desplace a la left*/
+    display: flex; /* Flexbox para centrar el contenido horizontal y verticalmente */
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    background-color: red; /*tambien para la franja*/
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    gap:0;
+    margin: 0;
+    padding: 0;
+}
+
+.artistas_cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    background-color: #000000;
+    overflow-x: scroll; /*a partir de aqui para que no se mueva a la left el header lateral*/
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.artistas_enc_cont{
+    background-color: #8f8a8a;
+}
+
+.artistas_contenido_cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/*desplazamiento horizontal a partir de esta seccion, fijo el ancho max-width: 100%*/
+.seccion_map_2_vh_cont {
+    display: flex; /* Flexbox para centrar el contenido horizontal y verticalmente */
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    scrollbar-width: thin;
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.seccion_map_3_vh_cont {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+    max-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.textos_y_foto_cont,
+.foto_y_textos_cont { /*incluye *contenedor de *img* y *contenedor de textos*/
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    gap: 210px; /* Espacio entre los elementos */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.textos_container { /*contenedor de contenedores de textos*/
+    z-index: 100;
+    flex-direction: column; /* texto debajo el otro */
+    align-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #000000;
+    justify-content: center; /* Centra verticalmente los elementos */
+    text-align: justify; /* Justifica horizontalmente los elementos */
+    padding-right :50px;
+    padding-left :50px;
+    padding-top :50px;
+    padding-bottom :20px;
+    height: 100%;
+}
+
+.foto_text_cont  { /*contenedor de img*/
+    z-index: 99;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 0px;
+    margin-left: 25px;
+    background-color: #000000;
+}
+
+.video_cont { /*contenedor de img*/
+    z-index: 99;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row; /* texto debajo el otro */
+    align-items: center;
+    background-color: transparent;
+    width: 90vw;
+    margin: auto; /* Centra el contenedor */
+}
+
+.foto_cont { /*contenedor de img*/
+    z-index: 99;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 0px;
+    margin-left: 25px;
+    /*max-width: 100%;/*siempre*/
+    /*width: 100%;/*esta combinacion en contenedores para que no centre fino*/
+
+}
+
+.textosdefoto_cont { /*contenedor de contenedores de foto y textos*/
+    z-index: 100;
+    flex-direction: column; /* texto debajo el otro */
+    align-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #000000;
+    padding: 0%;
+    justify-content: center; /* Centra verticalmente los elementos */
+    text-align: justify; /* Justifica horizontalmente los elementos */
+    margin-right: 200px;
+
+}
+
+.textos_container p,
+.textosdefoto_cont p{
+    font-family: 'Comic Sans MS', cursive;
+}
+
+    /*************************************************************************/
+
+.foto_text { /*img*/
+    display: flex;
+    /*width: 80vw;*/
+}
+
+
+.foto { /*img*/
+    display: flex;
+    width: 80vw;
+}
+
+.text_1_1 {
+    color: red; /* Cambia "rojo" al color deseado */
+    /*margin_left:4%;*/
+}
+
+/**************************************************************************/
+
+.texto-vertical_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.texto-vertical {
+    writing-mode: vertical-rl; /* Cambia el modo de escritura a vertical de derecha a izquierda */
+    text-orientation: mixed; /* Permite que los caracteres estén en la posición correcta */
+    transform: rotate(180deg); /* Rota el texto 180 grados */
+    white-space: nowrap; /* Evita que el texto se ajuste automáticamente */
+    line-height: 1.5; /* Altura de línea, ajusta según necesites */
+    width: fit-content; /* Ajusta el ancho del contenedor al contenido del texto */
+    margin: auto; /* Centra el contenedor */
+    padding: 5px;
+}
+
+.scrollToBottom {
+    z-index: 800;
+    position: relative;
+    /*width:100%;*/
+    height: auto;
+    /*border-radius: 50%; /* Aplica un radio del 50% para hacerlo redondo */
+    overflow: hidden; /* Asegura que la imagen se ajuste al contenedor redondo */
+    background-color: transparent;
+    border: 0px;
+    left: 45%;
+}
+
+.logo_container {
+    position: fixed;
+    max-width: 15%;
+    top: 3%;
+    right: 9%;
+    background: transparent;
+    z-index: 900;
+}
+
+.logo {
+    z-index: 800;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Aplica un radio del 50% para hacerlo redondo */
+    overflow: hidden; /* Asegura que la imagen se ajuste al contenedor redondo */
+}
+
+.video_watermark_cont{
+    z-index: 99;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 0px;
+    margin-left: 6px;
+    /*max-width: 100%;/*siempre*/
+    /*width: 100%;/*esta combinacion en contenedores para que no centre fino*/
+}
+
+.watermark_cont {
+    z-index: 99;
+    opacity: 0.1; /* Ajusta la opacidad según sea necesario */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 0px;
+    margin-left: 25px;
+    /*max-width: 100%;/*siempre*/
+    /*width: 100%;/*esta combinacion en contenedores para que no centre fino*/
+}
+
+.watermark{
+    /*max-width: 50%; /* Ajusta el tamaño del logo según sea necesario */
+    display: flex;
+    width: 80vw;
+}

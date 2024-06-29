@@ -1,0 +1,176 @@
+html {
+    font-size: 20px; /* Tamaño de fuente base */
+}
+
+p {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    white-space: pre-wrap; /* Mantendrá los espacios en blanco y permitirá el ajuste de línea */
+    word-wrap: break-word; /* Romperá las palabras largas para evitar que desborden el contenedor */
+    /* O puedes usar overflow-wrap: break-word; si es más compatible con tu caso */
+    margin-left: 20%; /* Espacio entre la imagen y el texto */
+    margin-right: 20%; /* Espacio entre la imagen y el texto */
+    /*overflow: hidden; /* Oculta cualquier contenido que desborde del ancho especificado */
+    white-space: nowrap; /* Evita que el texto se ajuste automáticamente */
+    font-family: 'Agency FB', serif;
+    font-size: 1rem; /* Tamaño de fuente para todos los elementos <p> */
+}
+
+.container {
+    position: relative;
+    max-width: 100vw;
+    /*height: 100vh;*/
+    display: flex; /* Flexbox para centrar el contenido horizontal y verticalmente */
+    justify-content: flex-start; /* Alinear elementos al principio */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll; /* Agrega scroll vertical cuando las imágenes exceden la altura máxima */
+    /*overflow-x: scroll;*/
+    scrollbar-width: thin; /* Oculta la barra de desplazamiento en navegadores que admiten la propiedad scrollbar-width */
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+    background: #000000;
+
+}
+
+.seccion_container {
+    position: relative;
+    display: flex; /* Flexbox para centrar el contenido horizontal y verticalmente */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    /*width: 100%;*/
+    bottom: 0px;
+    background: transparent;
+    /*margin-top:-10%;*/
+}
+
+.artist_container,
+.texto {
+    display: flex;
+    flex-direction: row; /* Mapeo horizontal */
+    align-items: center;
+    margin-bottom: 0px;
+    max-width: 100%;
+    /*width: 100%;*/
+}
+
+
+/*contenedores scroll*/
+.artist_data_container,
+.texts_container {
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: normal; /* Alinear elementos al principio */
+    top: 20%;
+    max-width: 90vw;
+    scrollbar-width: thin;
+}
+
+.text6_container,
+.text5_container,
+.text4_container,
+.text3_container,
+.text2_container,
+.text1_container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.image11111 {
+    margin-left: 10%;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.image1,
+.image5,
+.image4,
+.image3,
+.image2,
+.image6 {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+}
+
+.text_1,
+.text_6,
+.text_5,
+.text_4,
+.text_2,
+.text_3,
+.text1,
+.text6,
+.text5,
+.text4,
+.text2,
+.text3 {
+    /*font-size: 20px;*/
+    display: flex;
+    /*margin-right: 80%;*/
+    color: white;
+    /*margin-left: 10%;*/
+    align-content: center;
+    width: 100%;
+
+}
+
+
+/*@media screen and (max-width: 600px) {
+  .artist_header_container,
+  .text_container {
+    flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
+/*  align-items: flex-start;
+}
+
+.artist_data_container,
+.textos {
+  flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
+/*
+  }
+}
+
+*/
+
+
+.scrollToBottom {
+    z-index: 800;
+    position: relative;
+    /*width:100%;*/
+    height: auto;
+    /*border-radius: 50%; /* Aplica un radio del 50% para hacerlo redondo */
+    overflow: hidden; /* Asegura que la imagen se ajuste al contenedor redondo */
+    color: white;
+    background-color: transparent;
+    border: 0px;
+    left: 45%;
+}
+
+.logo_container1 {
+    position: fixed;
+    max-width: 50px;
+    top: 4%;
+    right: 6%;
+    background: transparent;
+    z-index: 900;
+}
+
+.logo1 {
+    z-index: 800;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Aplica un radio del 50% para hacerlo redondo */
+    overflow: hidden; /* Asegura que la imagen se ajuste al contenedor redondo */
+}
+
+

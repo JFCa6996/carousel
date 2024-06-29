@@ -1,0 +1,22 @@
+/*la pagina debe ser relativa*/
+.page {
+    position: relative;
+    margin-bottom: 0px; /* Agrega espacio entre las imágenes */
+    margin-right: 0px; /* Ajusta este valor según el ancho predeterminado de la barra de desplazamiento de tu navegador */
+}
+
+/* Para navegadores que no admiten scrollbar-width */
+
+.image-container::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores WebKit */
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Establece una altura máxima igual al 100% de la altura de la ventana del navegador */
+    width: 100%; /* Permite que el ancho de la imagen se ajuste automáticamente para mantener la relación de aspecto */
+    /*height: 100%;*/
+}
+

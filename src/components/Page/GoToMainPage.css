@@ -1,0 +1,247 @@
+.gotomainpage_container {
+    z-index: 3;
+    position: relative;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%; /* Altura máxima del contenedor de imágenes antes de mostrar el scroll */
+    /*overflow-y: auto; /* Agrega scroll vertical cuando las imágenes exceden la altura máxima */
+    /*scrollbar-width: none; /* Oculta la barra de desplazamiento en navegadores que admiten la propiedad scrollbar-width */
+    /*-ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+
+    /* Compensa el ancho de la barra de desplazamiento */
+    /*margin-right: -15px; *//* Ajusta este valor según el ancho predeterminado de la barra de desplazamiento de tu navegador */
+    /*diseno*/
+    /*background-color: blue;*/
+    background-color: #000000;
+}
+
+.gotomainpage {
+    overflow-y: auto;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    max-height: 100%; /* Altura máxima del contenedor de imágenes antes de mostrar el scroll */
+
+    overflow-y: auto; /* Agrega scroll vertical cuando las imágenes exceden la altura máxima */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en navegadores que admiten la propiedad scrollbar-width */
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+
+    /* Compensa el ancho de la barra de desplazamiento */
+    /*margin-right: -15px;*/ /* Ajusta este valor según el ancho predeterminado de la barra de desplazamiento de tu navegador */
+    background-color: transparent;
+    color: white; /*color del texto de las paginas*/
+}
+
+.video_container1 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.video1 {
+    position: relative;
+    width: 100%; /* Utiliza el tamaño original del video */
+    max-width: 100%; /* No permitas que el video sea más grande que el contenedor */
+    height: auto;
+}
+
+/*Header*/
+.Header {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Lato', serif;
+    font-family: 'Agency FB', serif;
+    /*margin-bottom: 20px;
+     margin-top:30px;*/
+    color: darkmagenta;
+}
+
+
+/*Sub titulo Header*/
+.title1 {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    /*font-weight: bold;*/
+    font-family: 'Agency FB', serif;
+}
+
+/*Subtitulo 1*/
+.title2 {
+    font-family: 'Agency FB', serif;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Agency FB', serif;
+
+}
+
+.title3 {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Agency FB', serif;
+
+}
+
+/*Subtitulo 2*/
+.title4 {
+    color: darkmagenta;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold; /* Pone el texto en negritas */
+    font-family: 'Agency FB', serif;
+}
+
+.Header_container {
+    background-color: transparent;
+}
+
+.title1_container {
+    background-color: transparent;
+}
+
+.title2_container {
+    background-color: transparent;
+}
+
+.title3_container {
+    background-color: transparent;
+}
+
+.title4_container {
+    background-color: transparent;
+}
+
+/*Aqui comienzan los textos con title5_head*/
+.title5_container,
+.title6_container,
+.title7_container,
+.title8_container,
+.title9_container,
+.title10_container,
+.title11_container,
+.title12_container,
+.title13_container,
+.title14_container,
+.title15_container,
+.title16_container,
+.title17_container,
+.title18_container,
+.title19_container,
+.title20_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.title5_container p,
+.title6_container p,
+.title7_container p,
+.title8_container p,
+.title9_container p,
+.title10_container p,
+.title11_container p,
+.title12_container p,
+.title13_container p,
+.title14_container p,
+.title15_container p,
+.title16_container p,
+.title17_container p,
+.title18_container p,
+.title19_container p,
+.title20_container p {
+    margin: 0; /* Eliminar el margen por defecto de los párrafos */
+    padding: 0; /* Eliminar el relleno por defecto de los párrafos */
+}
+
+.title5_head,
+.space,
+.title5,
+.title6,
+.title7,
+.title8,
+.title9,
+.title10,
+.title11,
+.title12,
+.title13,
+.title14,
+.title15,
+.title16,
+.title17,
+.title18,
+.title19,
+.title20 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Agency FB', serif;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.title5_head {
+    color: darkred;
+    font-weight: bold;
+}
+
+.space {
+    color: transparent;
+}
+
+.insertLine1 {
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.insertLine2 {
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.insertLine5 {
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.insertLine6 {
+    color: transparent;
+    margin-bottom: 400px;
+}
+
+.imagen1_container {
+    margin: 0px;
+    padding: 0px;
+    background: transparent;
+}
+
+.imagen1 {
+    width: 100%;
+    height: 100%;
+}
+
+.imagen2_container {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.imagen2 {
+    height: auto; /* Establece una altura máxima igual al 100% de la altura de la ventana del navegador */
+    width: 100%;; /* Permite que el ancho de la imagen se ajuste automáticamente para mantener la relación de aspecto */
+
+}

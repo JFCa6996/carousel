@@ -1,0 +1,94 @@
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Flexbox para centrar el contenido horizontal y verticalmente */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll; /* Agrega scroll vertical cuando las imágenes exceden la altura máxima */
+    scrollbar-width: thin; /* Oculta la barra de desplazamiento en navegadores que admiten la propiedad scrollbar-width */
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+    background: transparent;
+}
+
+.seccion_container {
+    position: relative;
+    display: flex; /* Flexbox para centrar el contenido horizontal y verticalmente */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    bottom: 20px;
+    background: transparent;
+    margin-top: 100px;
+}
+
+.artist_container,
+.texto {
+    display: flex;
+    flex-direction: row; /* Mapeo horizontal */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.artist_containt_container1 {
+    overflow-x: scroll; /* Permitir desplazamiento horizontal */
+}
+
+/*contenedores scroll*/
+.artist_data_container,
+.texts_container {
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    display: flex;
+    /*align-items: center;*/
+    justify-content: flex-start; /* Alinear elementos al principio */
+    width: 100%;
+
+}
+
+.image1_container {
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    width: 100%;
+}
+
+.image6,
+.image5,
+.image4,
+.image3,
+.image2,
+.image1 {
+
+    display: flex;
+}
+
+.text6,
+.text5,
+.text4,
+.text1,
+.text2,
+.text3 {
+    font-size: 16px;
+    display: flex;
+}
+
+
+@media screen and (max-width: 600px) {
+    .artist_header_container,
+    .text_container {
+        flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
+        align-items: flex-start;
+    }
+
+    .artist_data_container,
+    .textos {
+        flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
+
+    }
+}
+

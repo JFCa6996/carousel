@@ -1,0 +1,34 @@
+/*la pagina debe ser relativa*/
+.mainpage{
+    /*z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/
+
+    overflow-y: scroll; /* Agrega scroll vertical cuando las imágenes exceden la altura máxima */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en navegadores que admiten la propiedad scrollbar-width */
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:auto; /* Establece una altura máxima igual al 100% de la altura de la ventana del navegador */
+    width: 100%; /* Permite que el ancho de la imagen se ajuste automáticamente para mantener la relación de aspecto*/
+}
+
+.title3_container{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.title3{
+    font-size: 1%;
+}
